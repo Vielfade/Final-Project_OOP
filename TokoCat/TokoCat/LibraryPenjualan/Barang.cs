@@ -10,6 +10,8 @@ namespace LibraryPenjualan
     {
         public string Kode { get; set; }
         public string Nama { get; set; }
+        public string Keterangan { get; set; }
+        public string Harga { get; set; }
         public string Satuan { get; set; }
     }
 }
