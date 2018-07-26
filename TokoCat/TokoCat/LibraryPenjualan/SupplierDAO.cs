@@ -49,6 +49,8 @@ namespace LibraryPenjualan
                                     {
                                         Kode = reader["kode"].ToString(),
                                         Nama = reader["Nama"].ToString(),
+                                        Keterangan = reader["Keterangan"].ToString(),
+                                        Harga = reader["Harga"].ToString(),
                                         Satuan = reader["Satuan"].ToString()
                                     }
                                 });
@@ -90,6 +92,8 @@ namespace LibraryPenjualan
                                     {
                                         Kode = reader["kode"].ToString(),
                                         Nama = reader["Nama"].ToString(),
+                                        Keterangan = reader["Keterangan"].ToString(),
+                                        Harga = reader["Harga"].ToString(),
                                         Satuan = reader["Satuan"].ToString()
                                     }
                                 };
