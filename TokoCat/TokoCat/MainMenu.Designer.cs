@@ -37,11 +37,11 @@
             this.lbl_ttlharga = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.btn_add = new System.Windows.Forms.Button();
             this.Colum_no = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column_nama = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column_Keterangan = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column_quantity = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.btn_add = new System.Windows.Forms.Button();
             this.Column_harga = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -78,6 +78,7 @@
             this.btn_sign.TabIndex = 15;
             this.btn_sign.Text = "&Sign in";
             this.btn_sign.UseVisualStyleBackColor = true;
+            this.btn_sign.Click += new System.EventHandler(this.btn_sign_Click);
             // 
             // btn_delete
             // 
@@ -130,6 +131,7 @@
             // 
             // dataGridView1
             // 
+            this.dataGridView1.AllowUserToAddRows = false;
             this.dataGridView1.AllowUserToDeleteRows = false;
             this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
@@ -146,6 +148,17 @@
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(903, 416);
             this.dataGridView1.TabIndex = 10;
+            // 
+            // btn_add
+            // 
+            this.btn_add.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btn_add.Location = new System.Drawing.Point(173, 87);
+            this.btn_add.Margin = new System.Windows.Forms.Padding(4);
+            this.btn_add.Name = "btn_add";
+            this.btn_add.Size = new System.Drawing.Size(100, 28);
+            this.btn_add.TabIndex = 9;
+            this.btn_add.Text = "&Add barang";
+            this.btn_add.UseVisualStyleBackColor = true;
             // 
             // Colum_no
             // 
@@ -169,18 +182,6 @@
             // 
             this.Column_quantity.HeaderText = "Jumlah barang";
             this.Column_quantity.Name = "Column_quantity";
-            this.Column_quantity.ReadOnly = true;
-            // 
-            // btn_add
-            // 
-            this.btn_add.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btn_add.Location = new System.Drawing.Point(173, 87);
-            this.btn_add.Margin = new System.Windows.Forms.Padding(4);
-            this.btn_add.Name = "btn_add";
-            this.btn_add.Size = new System.Drawing.Size(100, 28);
-            this.btn_add.TabIndex = 9;
-            this.btn_add.Text = "&Add barang";
-            this.btn_add.UseVisualStyleBackColor = true;
             // 
             // Column_harga
             // 
@@ -224,11 +225,11 @@
         private System.Windows.Forms.Label lbl_ttlharga;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Button btn_add;
         private System.Windows.Forms.DataGridViewTextBoxColumn Colum_no;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column_nama;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column_Keterangan;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column_quantity;
-        private System.Windows.Forms.Button btn_add;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column_harga;
     }
 }
