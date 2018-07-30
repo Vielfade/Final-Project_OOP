@@ -12,11 +12,11 @@ namespace LibraryPenjualan
 
         SqlConnection _conn = null;
 
-        public BarangDAO(string connectionString)
+        public BarangDAO()
         {
             try
             {
-                _conn = new SqlConnection(connectionString);
+                _conn = new SqlConnection(Program.GetConnectionString());
                 _conn.Open();
             }
             catch (Exception ex)
@@ -47,7 +47,8 @@ namespace LibraryPenjualan
                                     Nama = reader["Nama"].ToString(),
                                     Keterangan = reader ["Keterangan"].ToString(),
                                     Harga = reader ["Harga"].ToString(),
-                                    Satuan = reader["Satuan"].ToString()
+                                    Satuan = reader["Satuan"].ToString(),
+                                    Stok = reader["Stok"].ToString()
                                 });
                             }
                         }
@@ -84,7 +85,8 @@ namespace LibraryPenjualan
                                     Nama = reader["Nama"].ToString(),
                                     Keterangan = reader["Keterangan"].ToString(),
                                     Harga = reader["Harga"].ToString(),
-                                    Satuan = reader["Satuan"].ToString()
+                                    Satuan = reader["Satuan"].ToString(),
+                                    Stok = reader["Stok"].ToString()
                                 };
                             }
                         }
@@ -96,6 +98,65 @@ namespace LibraryPenjualan
                 throw ex;
             }
             return result;
+        }
+
+        public List<Barang> QueryDataBarang(Barang barang)
+        {
+            List<Barang> listData = null;
+            try
+            {
+                using (SqlCommand cmd = new SqlCommand())
+                {
+                    cmd.Connection = _conn;
+                    if (barang == null)
+                    {
+                        cmd.CommandText =
+                            @"select * from Barang order by kode";
+                    }
+                    else
+                    {
+                        cmd.CommandText =
+                            @"select b.* from mahasiswa m 
+                                where b.kode like @kode and b.nama like @nama and
+                                b.keterangan like @keterangan and b.harga like @harga and b.satuan like @satuan 
+                                and b.stok like @stok 
+                                order by kode";
+                        cmd.Parameters.Clear();
+                        cmd.Parameters.AddWithValue("@kode", $"%{barang.Kode}%");
+                        cmd.Parameters.AddWithValue("@nama", $"%{barang.Nama}%");
+                        cmd.Parameters.AddWithValue("@keterangan", $"%{barang.Keterangan}%");
+                        cmd.Parameters.AddWithValue("@Harga", $"%{barang.Harga}%");
+                        cmd.Parameters.AddWithValue("@Satuan", $"%{barang.Satuan}%");
+                        cmd.Parameters.AddWithValue("@Stok", $"%{barang.Stok}%");
+                    }
+                    using (SqlDataReader reader = cmd.ExecuteReader())
+                    {
+                        if (reader.HasRows)
+                        {
+                            listData = new List<Barang>();
+                            while (reader.Read())
+                            {
+                                listData.Add(
+                                    new Barang
+                                    {
+                                        Kode = reader["kode"].ToString(),
+                                        Nama = reader["nama"].ToString(),
+                                        Keterangan = reader["keterangan"].ToString(),
+                                        Harga = reader["harga"].ToString(),
+                                        Satuan = reader["satuan"].ToString(),
+                                        Stok = reader["stok"].ToString()
+                                    });
+                            }
+                        }
+
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+            return listData;
         }
 
         public void Dispose()
