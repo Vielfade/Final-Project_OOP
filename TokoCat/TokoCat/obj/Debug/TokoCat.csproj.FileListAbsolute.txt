@@ -8,3 +8,22 @@ D:\#UPH Medan\Semester 3\OOP\Final Project\TokoCat\TokoCat\obj\Debug\TokoCat.csp
 D:\#UPH Medan\Semester 3\OOP\Final Project\TokoCat\TokoCat\obj\Debug\TokoCat.csproj.CoreCompileInputs.cache
 D:\#UPH Medan\Semester 3\OOP\Final Project\TokoCat\TokoCat\obj\Debug\TokoCat.exe
 D:\#UPH Medan\Semester 3\OOP\Final Project\TokoCat\TokoCat\obj\Debug\TokoCat.pdb
+C:\workspace\git\Final-Project_OOP\TokoCat\TokoCat\bin\Debug\TokoCat.exe.config
+C:\workspace\git\Final-Project_OOP\TokoCat\TokoCat\bin\Debug\TokoCat.exe
+C:\workspace\git\Final-Project_OOP\TokoCat\TokoCat\bin\Debug\TokoCat.pdb
+C:\workspace\git\Final-Project_OOP\TokoCat\TokoCat\obj\Debug\TokoCat.csprojAssemblyReference.cache
+C:\workspace\git\Final-Project_OOP\TokoCat\TokoCat\obj\Debug\FinalProjectPhase1.Faktur_Page.resources
+C:\workspace\git\Final-Project_OOP\TokoCat\TokoCat\obj\Debug\TokoCat.FrmTambahPembelian.resources
+C:\workspace\git\Final-Project_OOP\TokoCat\TokoCat\obj\Debug\FinalProjectPhase1.LoginPetugas.resources
+C:\workspace\git\Final-Project_OOP\TokoCat\TokoCat\obj\Debug\TokoCat.MainMenu.resources
+C:\workspace\git\Final-Project_OOP\TokoCat\TokoCat\obj\Debug\TokoCat.Properties.Resources.resources
+C:\workspace\git\Final-Project_OOP\TokoCat\TokoCat\obj\Debug\WindowsFormsApp1.ResupplyForm.resources
+C:\workspace\git\Final-Project_OOP\TokoCat\TokoCat\obj\Debug\TokoCat.csproj.GenerateResource.cache
+C:\workspace\git\Final-Project_OOP\TokoCat\TokoCat\obj\Debug\TokoCat.csproj.CoreCompileInputs.cache
+C:\workspace\git\Final-Project_OOP\TokoCat\TokoCat\obj\Debug\TokoCat.exe
+C:\workspace\git\Final-Project_OOP\TokoCat\TokoCat\obj\Debug\TokoCat.pdb
+C:\workspace\git\Final-Project_OOP\TokoCat\TokoCat\bin\Debug\LibraryPenjualan.dll
+C:\workspace\git\Final-Project_OOP\TokoCat\TokoCat\bin\Debug\LibraryPenjualan.pdb
+C:\workspace\git\Final-Project_OOP\TokoCat\TokoCat\bin\Debug\LibraryPenjualan.dll.config
+C:\workspace\git\Final-Project_OOP\TokoCat\TokoCat\obj\Debug\TokoCat.csproj.CopyComplete
+C:\workspace\git\Final-Project_OOP\TokoCat\TokoCat\obj\Debug\TokoCat.MainPetugas.resources
