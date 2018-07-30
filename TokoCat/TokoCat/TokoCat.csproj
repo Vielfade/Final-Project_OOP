@@ -51,11 +51,11 @@
     <Compile Include="Faktur.designer.cs">
       <DependentUpon>Faktur.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmTambahPembelian.cs">
+    <Compile Include="FrmTambahPenjualan.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmTambahPembelian.Designer.cs">
-      <DependentUpon>FrmTambahPembelian.cs</DependentUpon>
+    <Compile Include="FrmTambahPenjualan.Designer.cs">
+      <DependentUpon>FrmTambahPenjualan.cs</DependentUpon>
     </Compile>
     <Compile Include="LoginPetugas.cs">
       <SubType>Form</SubType>
@@ -86,8 +86,8 @@
     <EmbeddedResource Include="Faktur.resx">
       <DependentUpon>Faktur.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmTambahPembelian.resx">
-      <DependentUpon>FrmTambahPembelian.cs</DependentUpon>
+    <EmbeddedResource Include="FrmTambahPenjualan.resx">
+      <DependentUpon>FrmTambahPenjualan.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="LoginPetugas.resx">
       <DependentUpon>LoginPetugas.cs</DependentUpon>
@@ -124,7 +124,12 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="LibraryPenjualan\LibraryPenjualan.csproj">
+      <Project>{8eed1f23-2aa8-499d-b2d7-f913d64f838f}</Project>
+      <Name>LibraryPenjualan</Name>
+    </ProjectReference>
+  </ItemGroup>
   <ItemGroup>
     <None Include="Resources\174976751-612x612.jpg" />
   </ItemGroup>
