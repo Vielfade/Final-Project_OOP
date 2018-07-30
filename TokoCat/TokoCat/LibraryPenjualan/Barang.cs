@@ -13,5 +13,6 @@ namespace LibraryPenjualan
         public string Keterangan { get; set; }
         public string Harga { get; set; }
         public string Satuan { get; set; }
+        public string Stok { get; set; }
     }
 }

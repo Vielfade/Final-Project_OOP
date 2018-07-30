@@ -51,7 +51,8 @@ namespace LibraryPenjualan
                                         Nama = reader["Nama"].ToString(),
                                         Keterangan = reader["Keterangan"].ToString(),
                                         Harga = reader["Harga"].ToString(),
-                                        Satuan = reader["Satuan"].ToString()
+                                        Satuan = reader["Satuan"].ToString(),
+                                        Stok = reader["Stok"].ToString()
                                     }
                                 });
                             }
@@ -94,7 +95,8 @@ namespace LibraryPenjualan
                                         Nama = reader["Nama"].ToString(),
                                         Keterangan = reader["Keterangan"].ToString(),
                                         Harga = reader["Harga"].ToString(),
-                                        Satuan = reader["Satuan"].ToString()
+                                        Satuan = reader["Satuan"].ToString(),
+                                        Stok = reader["Stok"].ToString()
                                     }
                                 };
                             }
