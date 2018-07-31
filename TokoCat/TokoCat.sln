@@ -12,6 +12,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LibraryPenjualan", "TokoCat
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Conn", "TokoCat\Conn\Conn.csproj", "{47E76554-4DF3-469B-AF59-57AA95A47699}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TokoCat", "TokoCat\TokoCat.csproj", "{86ED95E4-A98B-4A14-B1DE-68683F0C9320}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -26,6 +28,10 @@ Global
 		{47E76554-4DF3-469B-AF59-57AA95A47699}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{47E76554-4DF3-469B-AF59-57AA95A47699}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{47E76554-4DF3-469B-AF59-57AA95A47699}.Release|Any CPU.Build.0 = Release|Any CPU
+		{86ED95E4-A98B-4A14-B1DE-68683F0C9320}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{86ED95E4-A98B-4A14-B1DE-68683F0C9320}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{86ED95E4-A98B-4A14-B1DE-68683F0C9320}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{86ED95E4-A98B-4A14-B1DE-68683F0C9320}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
