@@ -45,11 +45,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="asdm.cs">
+    <Compile Include="FrmEditDataBarang.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="asdm.Designer.cs">
-      <DependentUpon>asdm.cs</DependentUpon>
+    <Compile Include="FrmEditDataBarang.Designer.cs">
+      <DependentUpon>FrmEditDataBarang.cs</DependentUpon>
     </Compile>
     <Compile Include="Faktur.cs">
       <SubType>Form</SubType>
@@ -91,6 +91,9 @@
     </Compile>
     <EmbeddedResource Include="Faktur.resx">
       <DependentUpon>Faktur.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmEditDataBarang.resx">
+      <DependentUpon>FrmEditDataBarang.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmTambahPenjualan.resx">
       <DependentUpon>FrmTambahPenjualan.cs</DependentUpon>
