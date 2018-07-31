@@ -12,12 +12,8 @@ C:\workspace\git\Final-Project_OOP\TokoCat\TokoCat\bin\Debug\TokoCat.exe.config
 C:\workspace\git\Final-Project_OOP\TokoCat\TokoCat\bin\Debug\TokoCat.exe
 C:\workspace\git\Final-Project_OOP\TokoCat\TokoCat\bin\Debug\TokoCat.pdb
 C:\workspace\git\Final-Project_OOP\TokoCat\TokoCat\obj\Debug\TokoCat.csprojAssemblyReference.cache
-C:\workspace\git\Final-Project_OOP\TokoCat\TokoCat\obj\Debug\FinalProjectPhase1.Faktur_Page.resources
-C:\workspace\git\Final-Project_OOP\TokoCat\TokoCat\obj\Debug\TokoCat.FrmTambahPembelian.resources
-C:\workspace\git\Final-Project_OOP\TokoCat\TokoCat\obj\Debug\FinalProjectPhase1.LoginPetugas.resources
 C:\workspace\git\Final-Project_OOP\TokoCat\TokoCat\obj\Debug\TokoCat.MainMenu.resources
 C:\workspace\git\Final-Project_OOP\TokoCat\TokoCat\obj\Debug\TokoCat.Properties.Resources.resources
-C:\workspace\git\Final-Project_OOP\TokoCat\TokoCat\obj\Debug\WindowsFormsApp1.ResupplyForm.resources
 C:\workspace\git\Final-Project_OOP\TokoCat\TokoCat\obj\Debug\TokoCat.csproj.GenerateResource.cache
 C:\workspace\git\Final-Project_OOP\TokoCat\TokoCat\obj\Debug\TokoCat.csproj.CoreCompileInputs.cache
 C:\workspace\git\Final-Project_OOP\TokoCat\TokoCat\obj\Debug\TokoCat.exe
@@ -27,23 +23,8 @@ C:\workspace\git\Final-Project_OOP\TokoCat\TokoCat\bin\Debug\LibraryPenjualan.pd
 C:\workspace\git\Final-Project_OOP\TokoCat\TokoCat\bin\Debug\LibraryPenjualan.dll.config
 C:\workspace\git\Final-Project_OOP\TokoCat\TokoCat\obj\Debug\TokoCat.csproj.CopyComplete
 C:\workspace\git\Final-Project_OOP\TokoCat\TokoCat\obj\Debug\TokoCat.MainPetugas.resources
-D:\UPH\Semes 3\Coding\FinalProject\TokoCat\TokoCat\bin\Debug\TokoCat.exe.config
-D:\UPH\Semes 3\Coding\FinalProject\TokoCat\TokoCat\bin\Debug\TokoCat.exe
-D:\UPH\Semes 3\Coding\FinalProject\TokoCat\TokoCat\bin\Debug\TokoCat.pdb
-D:\UPH\Semes 3\Coding\FinalProject\TokoCat\TokoCat\bin\Debug\LibraryPenjualan.dll
-D:\UPH\Semes 3\Coding\FinalProject\TokoCat\TokoCat\bin\Debug\LibraryPenjualan.pdb
-D:\UPH\Semes 3\Coding\FinalProject\TokoCat\TokoCat\bin\Debug\LibraryPenjualan.dll.config
-D:\UPH\Semes 3\Coding\FinalProject\TokoCat\TokoCat\obj\Debug\TokoCat.csprojAssemblyReference.cache
-D:\UPH\Semes 3\Coding\FinalProject\TokoCat\TokoCat\obj\Debug\TokoCat.FrmTambahPenjualan.resources
-D:\UPH\Semes 3\Coding\FinalProject\TokoCat\TokoCat\obj\Debug\FinalProjectPhase1.LoginPetugas.resources
-D:\UPH\Semes 3\Coding\FinalProject\TokoCat\TokoCat\obj\Debug\TokoCat.MainMenu.resources
-D:\UPH\Semes 3\Coding\FinalProject\TokoCat\TokoCat\obj\Debug\TokoCat.MainPetugas.resources
-D:\UPH\Semes 3\Coding\FinalProject\TokoCat\TokoCat\obj\Debug\TokoCat.Properties.Resources.resources
-D:\UPH\Semes 3\Coding\FinalProject\TokoCat\TokoCat\obj\Debug\TokoCat.csproj.GenerateResource.cache
-D:\UPH\Semes 3\Coding\FinalProject\TokoCat\TokoCat\obj\Debug\TokoCat.csproj.CoreCompileInputs.cache
-D:\UPH\Semes 3\Coding\FinalProject\TokoCat\TokoCat\obj\Debug\TokoCat.csproj.CopyComplete
-D:\UPH\Semes 3\Coding\FinalProject\TokoCat\TokoCat\obj\Debug\TokoCat.exe
-D:\UPH\Semes 3\Coding\FinalProject\TokoCat\TokoCat\obj\Debug\TokoCat.pdb
-D:\UPH\Semes 3\Coding\FinalProject\TokoCat\TokoCat\obj\Debug\TokoCat.FrmDgvResupply.resources
-D:\UPH\Semes 3\Coding\FinalProject\TokoCat\TokoCat\obj\Debug\TokoCat.ResupplyForm.resources
-D:\UPH\Semes 3\Coding\FinalProject\TokoCat\TokoCat\obj\Debug\TokoCat.Faktur_Page.resources
+C:\workspace\git\Final-Project_OOP\TokoCat\TokoCat\obj\Debug\TokoCat.FrmTambahPenjualan.resources
+C:\workspace\git\Final-Project_OOP\TokoCat\TokoCat\obj\Debug\TokoCat.FrmEditDataBarang.resources
+C:\workspace\git\Final-Project_OOP\TokoCat\TokoCat\obj\Debug\TokoCat.Faktur_Page.resources
+C:\workspace\git\Final-Project_OOP\TokoCat\TokoCat\obj\Debug\TokoCat.ResupplyForm.resources
+C:\workspace\git\Final-Project_OOP\TokoCat\TokoCat\obj\Debug\TokoCat.LoginPetugas.resources

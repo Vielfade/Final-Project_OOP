@@ -117,6 +117,7 @@
             this.cbKeterangan.Name = "cbKeterangan";
             this.cbKeterangan.Size = new System.Drawing.Size(121, 21);
             this.cbKeterangan.TabIndex = 14;
+            this.cbKeterangan.SelectedIndexChanged += new System.EventHandler(this.cbKeterangan_SelectedIndexChanged);
             // 
             // label2
             // 
