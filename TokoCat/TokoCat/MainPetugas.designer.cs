@@ -53,10 +53,9 @@
             // 
             this.Petugas_Label.AutoSize = true;
             this.Petugas_Label.Font = new System.Drawing.Font("Comic Sans MS", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Petugas_Label.Location = new System.Drawing.Point(16, 11);
-            this.Petugas_Label.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.Petugas_Label.Location = new System.Drawing.Point(12, 9);
             this.Petugas_Label.Name = "Petugas_Label";
-            this.Petugas_Label.Size = new System.Drawing.Size(169, 55);
+            this.Petugas_Label.Size = new System.Drawing.Size(138, 45);
             this.Petugas_Label.TabIndex = 0;
             this.Petugas_Label.Text = "Petugas";
             // 
@@ -64,20 +63,18 @@
             // 
             this.Search_Label.AutoSize = true;
             this.Search_Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Search_Label.Location = new System.Drawing.Point(27, 95);
-            this.Search_Label.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.Search_Label.Location = new System.Drawing.Point(20, 77);
             this.Search_Label.Name = "Search_Label";
-            this.Search_Label.Size = new System.Drawing.Size(95, 29);
+            this.Search_Label.Size = new System.Drawing.Size(76, 24);
             this.Search_Label.TabIndex = 1;
             this.Search_Label.Text = "Search";
             // 
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(908, 11);
-            this.button1.Margin = new System.Windows.Forms.Padding(4);
+            this.button1.Location = new System.Drawing.Point(681, 9);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(143, 70);
+            this.button1.Size = new System.Drawing.Size(107, 57);
             this.button1.TabIndex = 5;
             this.button1.Text = "Logout";
             this.button1.UseVisualStyleBackColor = true;
@@ -85,10 +82,9 @@
             // button2
             // 
             this.button2.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(908, 211);
-            this.button2.Margin = new System.Windows.Forms.Padding(4);
+            this.button2.Location = new System.Drawing.Point(681, 171);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(143, 70);
+            this.button2.Size = new System.Drawing.Size(107, 57);
             this.button2.TabIndex = 6;
             this.button2.Text = "Faktur";
             this.button2.UseVisualStyleBackColor = true;
@@ -96,10 +92,9 @@
             // button4
             // 
             this.button4.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.Location = new System.Drawing.Point(911, 367);
-            this.button4.Margin = new System.Windows.Forms.Padding(4);
+            this.button4.Location = new System.Drawing.Point(683, 298);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(143, 70);
+            this.button4.Size = new System.Drawing.Size(107, 57);
             this.button4.TabIndex = 8;
             this.button4.Text = "Edit";
             this.button4.UseVisualStyleBackColor = true;
@@ -107,10 +102,9 @@
             // button5
             // 
             this.button5.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.Location = new System.Drawing.Point(908, 289);
-            this.button5.Margin = new System.Windows.Forms.Padding(4);
+            this.button5.Location = new System.Drawing.Point(681, 235);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(143, 70);
+            this.button5.Size = new System.Drawing.Size(107, 57);
             this.button5.TabIndex = 9;
             this.button5.Text = "Hapus";
             this.button5.UseVisualStyleBackColor = true;
@@ -118,10 +112,9 @@
             // button6
             // 
             this.button6.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button6.Location = new System.Drawing.Point(908, 133);
-            this.button6.Margin = new System.Windows.Forms.Padding(4);
+            this.button6.Location = new System.Drawing.Point(681, 108);
             this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(143, 70);
+            this.button6.Size = new System.Drawing.Size(107, 57);
             this.button6.TabIndex = 10;
             this.button6.Text = "Resupply";
             this.button6.UseVisualStyleBackColor = true;
@@ -129,9 +122,10 @@
             // lblBanyakRecordData
             // 
             this.lblBanyakRecordData.AutoSize = true;
-            this.lblBanyakRecordData.Location = new System.Drawing.Point(13, 153);
+            this.lblBanyakRecordData.Location = new System.Drawing.Point(10, 124);
+            this.lblBanyakRecordData.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblBanyakRecordData.Name = "lblBanyakRecordData";
-            this.lblBanyakRecordData.Size = new System.Drawing.Size(62, 17);
+            this.lblBanyakRecordData.Size = new System.Drawing.Size(48, 13);
             this.lblBanyakRecordData.TabIndex = 11;
             this.lblBanyakRecordData.Text = "[Record]";
             // 
@@ -145,10 +139,11 @@
             this.Harga,
             this.Satuan,
             this.Stok});
-            this.dataGridView1.Location = new System.Drawing.Point(16, 180);
+            this.dataGridView1.Location = new System.Drawing.Point(12, 146);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(748, 217);
+            this.dataGridView1.Size = new System.Drawing.Size(561, 176);
             this.dataGridView1.TabIndex = 12;
             // 
             // Kode
@@ -183,26 +178,28 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(148, 102);
+            this.textBox1.Location = new System.Drawing.Point(111, 83);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(201, 22);
+            this.textBox1.Size = new System.Drawing.Size(152, 20);
             this.textBox1.TabIndex = 13;
             // 
             // comboBox1
             // 
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(428, 102);
+            this.comboBox1.Location = new System.Drawing.Point(321, 83);
+            this.comboBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 24);
+            this.comboBox1.Size = new System.Drawing.Size(92, 21);
             this.comboBox1.TabIndex = 14;
             // 
             // MainPetugas
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1067, 470);
+            this.ClientSize = new System.Drawing.Size(800, 382);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.dataGridView1);
@@ -214,7 +211,6 @@
             this.Controls.Add(this.button1);
             this.Controls.Add(this.Search_Label);
             this.Controls.Add(this.Petugas_Label);
-            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "MainPetugas";
             this.Text = "Petugas";
             this.TransparencyKey = System.Drawing.SystemColors.ActiveBorder;
