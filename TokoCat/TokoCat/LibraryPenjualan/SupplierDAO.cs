@@ -43,16 +43,9 @@ namespace LibraryPenjualan
                                 listData.Add(new Supplier
                                 {
                                     Kode = reader["Kode"].ToString(),
-                                    Nama = reader["Qty"].ToString(),
-                                    Kota = reader["HargaSatuan"].ToString(),
-                                    DataBarang = new Barang
-                                    {
-                                        Kode = reader["kode"].ToString(),
-                                        Nama = reader["Nama"].ToString(),
-                                        Keterangan = reader["Keterangan"].ToString(),
-                                        Harga = reader["Harga"].ToString(),
-                                        Satuan = reader["Satuan"].ToString()
-                                    }
+                                    Nama = reader["Nama"].ToString(),
+                                    Jumlah = Convert.ToInt32(reader["Jumlah"]),
+                                    Harga = reader["Harga"].ToString()
                                 });
                             }
                         }
@@ -87,15 +80,8 @@ namespace LibraryPenjualan
                                 {
                                     Kode = reader["Kode"].ToString(),
                                     Nama = reader["Qty"].ToString(),
-                                    Kota = reader["HargaSatuan"].ToString(),
-                                    DataBarang = new Barang
-                                    {
-                                        Kode = reader["kode"].ToString(),
-                                        Nama = reader["Nama"].ToString(),
-                                        Keterangan = reader["Keterangan"].ToString(),
-                                        Harga = reader["Harga"].ToString(),
-                                        Satuan = reader["Satuan"].ToString()
-                                    }
+                                    Jumlah = Convert.ToInt32(reader["Jumlah"]),
+                                    Harga = reader["Harga"].ToString()
                                 };
                             }
                         }

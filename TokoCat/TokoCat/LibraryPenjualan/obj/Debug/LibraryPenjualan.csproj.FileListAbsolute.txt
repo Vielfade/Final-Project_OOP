@@ -1,0 +1,14 @@
+C:\workspace\git\Final-Project_OOP\TokoCat\TokoCat\LibraryPenjualan\bin\Debug\LibraryPenjualan.dll.config
+C:\workspace\git\Final-Project_OOP\TokoCat\TokoCat\LibraryPenjualan\bin\Debug\LibraryPenjualan.dll
+C:\workspace\git\Final-Project_OOP\TokoCat\TokoCat\LibraryPenjualan\bin\Debug\LibraryPenjualan.pdb
+C:\workspace\git\Final-Project_OOP\TokoCat\TokoCat\LibraryPenjualan\obj\Debug\LibraryPenjualan.csprojAssemblyReference.cache
+C:\workspace\git\Final-Project_OOP\TokoCat\TokoCat\LibraryPenjualan\obj\Debug\LibraryPenjualan.csproj.CoreCompileInputs.cache
+C:\workspace\git\Final-Project_OOP\TokoCat\TokoCat\LibraryPenjualan\obj\Debug\LibraryPenjualan.dll
+C:\workspace\git\Final-Project_OOP\TokoCat\TokoCat\LibraryPenjualan\obj\Debug\LibraryPenjualan.pdb
+D:\UPH\Semes 3\Coding\FinalProject\TokoCat\TokoCat\LibraryPenjualan\bin\Debug\LibraryPenjualan.dll.config
+D:\UPH\Semes 3\Coding\FinalProject\TokoCat\TokoCat\LibraryPenjualan\bin\Debug\LibraryPenjualan.dll
+D:\UPH\Semes 3\Coding\FinalProject\TokoCat\TokoCat\LibraryPenjualan\bin\Debug\LibraryPenjualan.pdb
+D:\UPH\Semes 3\Coding\FinalProject\TokoCat\TokoCat\LibraryPenjualan\obj\Debug\LibraryPenjualan.csprojAssemblyReference.cache
+D:\UPH\Semes 3\Coding\FinalProject\TokoCat\TokoCat\LibraryPenjualan\obj\Debug\LibraryPenjualan.csproj.CoreCompileInputs.cache
+D:\UPH\Semes 3\Coding\FinalProject\TokoCat\TokoCat\LibraryPenjualan\obj\Debug\LibraryPenjualan.dll
+D:\UPH\Semes 3\Coding\FinalProject\TokoCat\TokoCat\LibraryPenjualan\obj\Debug\LibraryPenjualan.pdb
