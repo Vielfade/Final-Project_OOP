@@ -27,3 +27,24 @@ C:\workspace\git\Final-Project_OOP\TokoCat\TokoCat\bin\Debug\LibraryPenjualan.pd
 C:\workspace\git\Final-Project_OOP\TokoCat\TokoCat\bin\Debug\LibraryPenjualan.dll.config
 C:\workspace\git\Final-Project_OOP\TokoCat\TokoCat\obj\Debug\TokoCat.csproj.CopyComplete
 C:\workspace\git\Final-Project_OOP\TokoCat\TokoCat\obj\Debug\TokoCat.MainPetugas.resources
+D:\#UPH Medan\Semester 3\OOP\Final-Project_OOP\TokoCat\TokoCat\bin\Debug\TokoCat.exe.config
+D:\#UPH Medan\Semester 3\OOP\Final-Project_OOP\TokoCat\TokoCat\bin\Debug\TokoCat.exe
+D:\#UPH Medan\Semester 3\OOP\Final-Project_OOP\TokoCat\TokoCat\bin\Debug\TokoCat.pdb
+D:\#UPH Medan\Semester 3\OOP\Final-Project_OOP\TokoCat\TokoCat\bin\Debug\LibraryPenjualan.dll
+D:\#UPH Medan\Semester 3\OOP\Final-Project_OOP\TokoCat\TokoCat\bin\Debug\LibraryPenjualan.pdb
+D:\#UPH Medan\Semester 3\OOP\Final-Project_OOP\TokoCat\TokoCat\bin\Debug\LibraryPenjualan.dll.config
+D:\#UPH Medan\Semester 3\OOP\Final-Project_OOP\TokoCat\TokoCat\obj\Debug\TokoCat.csprojAssemblyReference.cache
+D:\#UPH Medan\Semester 3\OOP\Final-Project_OOP\TokoCat\TokoCat\obj\Debug\FinalProjectPhase1.Faktur_Page.resources
+D:\#UPH Medan\Semester 3\OOP\Final-Project_OOP\TokoCat\TokoCat\obj\Debug\TokoCat.FrmTambahPenjualan.resources
+D:\#UPH Medan\Semester 3\OOP\Final-Project_OOP\TokoCat\TokoCat\obj\Debug\TokoCat.MainMenu.resources
+D:\#UPH Medan\Semester 3\OOP\Final-Project_OOP\TokoCat\TokoCat\obj\Debug\TokoCat.MainPetugas.resources
+D:\#UPH Medan\Semester 3\OOP\Final-Project_OOP\TokoCat\TokoCat\obj\Debug\TokoCat.Properties.Resources.resources
+D:\#UPH Medan\Semester 3\OOP\Final-Project_OOP\TokoCat\TokoCat\obj\Debug\WindowsFormsApp1.ResupplyForm.resources
+D:\#UPH Medan\Semester 3\OOP\Final-Project_OOP\TokoCat\TokoCat\obj\Debug\TokoCat.csproj.GenerateResource.cache
+D:\#UPH Medan\Semester 3\OOP\Final-Project_OOP\TokoCat\TokoCat\obj\Debug\TokoCat.csproj.CoreCompileInputs.cache
+D:\#UPH Medan\Semester 3\OOP\Final-Project_OOP\TokoCat\TokoCat\obj\Debug\TokoCat.csproj.CopyComplete
+D:\#UPH Medan\Semester 3\OOP\Final-Project_OOP\TokoCat\TokoCat\obj\Debug\TokoCat.exe
+D:\#UPH Medan\Semester 3\OOP\Final-Project_OOP\TokoCat\TokoCat\obj\Debug\TokoCat.pdb
+D:\#UPH Medan\Semester 3\OOP\Final-Project_OOP\TokoCat\TokoCat\obj\Debug\TokoCat.LoginPetugas.resources
+D:\#UPH Medan\Semester 3\OOP\Final-Project_OOP\TokoCat\TokoCat\bin\Debug\DBPenjualanCAT.mdf
+D:\#UPH Medan\Semester 3\OOP\Final-Project_OOP\TokoCat\TokoCat\bin\Debug\DBPenjualanCAT_log.ldf

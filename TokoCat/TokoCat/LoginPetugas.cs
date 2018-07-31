@@ -8,13 +8,19 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace FinalProjectPhase1
+
+namespace TokoCat
 {
     public partial class LoginPetugas : Form
     {
         public LoginPetugas()
         {
             InitializeComponent();
+        }
+
+        private void Login_button_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -1,4 +1,4 @@
-﻿namespace FinalProjectPhase1
+﻿namespace TokoCat
 {
     partial class LoginPetugas
     {
@@ -40,7 +40,7 @@
             // 
             // Login_Page_form
             // 
-            this.Login_Page_form.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.Login_Page_form.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.Login_Page_form.AutoSize = true;
             this.Login_Page_form.Font = new System.Drawing.Font("Comic Sans MS", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -102,6 +102,7 @@
             this.Login_button.TabIndex = 5;
             this.Login_button.Text = "Login";
             this.Login_button.UseVisualStyleBackColor = true;
+            this.Login_button.Click += new System.EventHandler(this.Login_button_Click);
             // 
             // button1
             // 
