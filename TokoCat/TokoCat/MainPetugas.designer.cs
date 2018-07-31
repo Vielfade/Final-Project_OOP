@@ -34,13 +34,12 @@
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
+            this.Button5 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
             this.lblBanyakRecordData = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.Kode = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Nama = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Keterangan = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Harga = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Satuan = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Stok = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -81,6 +80,7 @@
             this.button1.TabIndex = 5;
             this.button1.Text = "Logout";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
@@ -92,6 +92,7 @@
             this.button2.TabIndex = 6;
             this.button2.Text = "Faktur";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button4
             // 
@@ -103,17 +104,19 @@
             this.button4.TabIndex = 8;
             this.button4.Text = "Edit";
             this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
-            // button5
+            // Button5
             // 
-            this.button5.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.Location = new System.Drawing.Point(908, 289);
-            this.button5.Margin = new System.Windows.Forms.Padding(4);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(143, 70);
-            this.button5.TabIndex = 9;
-            this.button5.Text = "Hapus";
-            this.button5.UseVisualStyleBackColor = true;
+            this.Button5.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Button5.Location = new System.Drawing.Point(908, 289);
+            this.Button5.Margin = new System.Windows.Forms.Padding(4);
+            this.Button5.Name = "Button5";
+            this.Button5.Size = new System.Drawing.Size(143, 70);
+            this.Button5.TabIndex = 9;
+            this.Button5.Text = "Hapus";
+            this.Button5.UseVisualStyleBackColor = true;
+            this.Button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // button6
             // 
@@ -125,6 +128,7 @@
             this.button6.TabIndex = 10;
             this.button6.Text = "Resupply";
             this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
             // lblBanyakRecordData
             // 
@@ -141,13 +145,13 @@
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Kode,
             this.Nama,
-            this.Keterangan,
             this.Harga,
             this.Satuan,
             this.Stok});
             this.dataGridView1.Location = new System.Drawing.Point(16, 180);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowTemplate.Height = 24;
+            this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridView1.Size = new System.Drawing.Size(748, 217);
             this.dataGridView1.TabIndex = 12;
             // 
@@ -160,11 +164,6 @@
             // 
             this.Nama.HeaderText = "Nama";
             this.Nama.Name = "Nama";
-            // 
-            // Keterangan
-            // 
-            this.Keterangan.HeaderText = "Keterangan";
-            this.Keterangan.Name = "Keterangan";
             // 
             // Harga
             // 
@@ -183,15 +182,16 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(148, 102);
+            this.textBox1.Location = new System.Drawing.Point(321, 102);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(201, 22);
             this.textBox1.TabIndex = 13;
+            this.textBox1.Leave += new System.EventHandler(this.textBox1_Leave);
             // 
             // comboBox1
             // 
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(428, 102);
+            this.comboBox1.Location = new System.Drawing.Point(143, 102);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(121, 24);
             this.comboBox1.TabIndex = 14;
@@ -208,7 +208,7 @@
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.lblBanyakRecordData);
             this.Controls.Add(this.button6);
-            this.Controls.Add(this.button5);
+            this.Controls.Add(this.Button5);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
@@ -216,6 +216,7 @@
             this.Controls.Add(this.Petugas_Label);
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "MainPetugas";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Petugas";
             this.TransparencyKey = System.Drawing.SystemColors.ActiveBorder;
             this.Load += new System.EventHandler(this.MainPetugas_Load);
@@ -232,18 +233,17 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button Button5;
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Label lblBanyakRecordData;
         private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Kode;
         private System.Windows.Forms.DataGridViewTextBoxColumn Nama;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Keterangan;
         private System.Windows.Forms.DataGridViewTextBoxColumn Harga;
         private System.Windows.Forms.DataGridViewTextBoxColumn Satuan;
         private System.Windows.Forms.DataGridViewTextBoxColumn Stok;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.ComboBox comboBox1;
     }
 }
 

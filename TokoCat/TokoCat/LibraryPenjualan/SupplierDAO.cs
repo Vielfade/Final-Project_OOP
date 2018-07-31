@@ -43,8 +43,8 @@ namespace LibraryPenjualan
                                 listData.Add(new Supplier
                                 {
                                     Kode = reader["Kode"].ToString(),
-                                    Nama = reader["Qty"].ToString(),
-                                    Kota = reader["HargaSatuan"].ToString(),
+                                    Nama = reader["Nama"].ToString(),
+                                    Kota = reader["Kota"].ToString(),
                                     DataBarang = new Barang
                                     {
                                         Kode = reader["kode"].ToString(),
