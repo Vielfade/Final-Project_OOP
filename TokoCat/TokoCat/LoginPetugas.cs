@@ -8,7 +8,6 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-
 namespace TokoCat
 {
     public partial class LoginPetugas : Form
@@ -16,11 +15,6 @@ namespace TokoCat
         public LoginPetugas()
         {
             InitializeComponent();
-        }
-
-        private void Login_button_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

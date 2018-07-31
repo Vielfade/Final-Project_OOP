@@ -265,5 +265,10 @@ namespace TokoCat
                 e.Handled = true;
             }
         }
+
+        private void cbKeterangan_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

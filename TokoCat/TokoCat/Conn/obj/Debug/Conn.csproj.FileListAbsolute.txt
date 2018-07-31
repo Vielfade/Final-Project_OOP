@@ -1,0 +1,2 @@
+D:\UPH\Semes 3\Coding\FinalProject\TokoCat\TokoCat\Conn\obj\Debug\Conn.csprojAssemblyReference.cache
+D:\UPH\Semes 3\Coding\FinalProject\TokoCat\TokoCat\Conn\obj\Debug\Conn.csproj.CoreCompileInputs.cache
