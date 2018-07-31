@@ -69,7 +69,6 @@
             this.btnTambah.TabIndex = 19;
             this.btnTambah.Text = "+";
             this.btnTambah.UseVisualStyleBackColor = true;
-            this.btnTambah.Click += new System.EventHandler(this.btnTambah_Click);
             // 
             // btnKurang
             // 
@@ -79,7 +78,6 @@
             this.btnKurang.TabIndex = 18;
             this.btnKurang.Text = "-";
             this.btnKurang.UseVisualStyleBackColor = true;
-            this.btnKurang.Click += new System.EventHandler(this.btnKurang_Click);
             // 
             // label4
             // 
@@ -117,6 +115,7 @@
             this.cbKeterangan.Name = "cbKeterangan";
             this.cbKeterangan.Size = new System.Drawing.Size(121, 24);
             this.cbKeterangan.TabIndex = 14;
+            this.cbKeterangan.SelectedIndexChanged += new System.EventHandler(this.cbKeterangan_SelectedIndexChanged);
             // 
             // label2
             // 
@@ -136,7 +135,6 @@
             this.cbBarang.Name = "cbBarang";
             this.cbBarang.Size = new System.Drawing.Size(121, 24);
             this.cbBarang.TabIndex = 12;
-            this.cbBarang.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // label1
             // 
