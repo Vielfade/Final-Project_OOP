@@ -51,6 +51,12 @@
     <Compile Include="Faktur.designer.cs">
       <DependentUpon>Faktur.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmDgvResupply.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDgvResupply.Designer.cs">
+      <DependentUpon>FrmDgvResupply.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmTambahPenjualan.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -85,6 +91,9 @@
     </Compile>
     <EmbeddedResource Include="Faktur.resx">
       <DependentUpon>Faktur.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmDgvResupply.resx">
+      <DependentUpon>FrmDgvResupply.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmTambahPenjualan.resx">
       <DependentUpon>FrmTambahPenjualan.cs</DependentUpon>
