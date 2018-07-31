@@ -77,6 +77,12 @@
     <Compile Include="FrmDgvResupply.Designer.cs">
       <DependentUpon>FrmDgvResupply.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmEditDataBarang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmEditDataBarang.Designer.cs">
+      <DependentUpon>FrmEditDataBarang.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmTambahPenjualan.cs">
       <SubType>Form</SubType>
     </Compile>

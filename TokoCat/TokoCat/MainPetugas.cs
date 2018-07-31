@@ -27,7 +27,7 @@ namespace TokoCat
         private void MainPetugas_Resize(object sender, EventArgs e)
         {
             this.dataGridView1.Columns[0].Width = 10 * this.dataGridView1.Width / 100;
-            this.dataGridView1.Columns[1].Width = 35 * this.dataGridView1.Width / 100;
+            this.dataGridView1.Columns[1].Width = 35  * this.dataGridView1.Width / 100;
             this.dataGridView1.Columns[2].Width = 15 * this.dataGridView1.Width / 100;
             this.dataGridView1.Columns[3].Width = 10 * this.dataGridView1.Width / 100;
             this.dataGridView1.Columns[4].Width = 10 * this.dataGridView1.Width / 100;

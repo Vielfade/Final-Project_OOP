@@ -24,7 +24,9 @@ C:\workspace\git\Final-Project_OOP\TokoCat\TokoCat\bin\Debug\LibraryPenjualan.dl
 C:\workspace\git\Final-Project_OOP\TokoCat\TokoCat\obj\Debug\TokoCat.csproj.CopyComplete
 C:\workspace\git\Final-Project_OOP\TokoCat\TokoCat\obj\Debug\TokoCat.MainPetugas.resources
 C:\workspace\git\Final-Project_OOP\TokoCat\TokoCat\obj\Debug\TokoCat.FrmTambahPenjualan.resources
-C:\workspace\git\Final-Project_OOP\TokoCat\TokoCat\obj\Debug\TokoCat.FrmEditDataBarang.resources
 C:\workspace\git\Final-Project_OOP\TokoCat\TokoCat\obj\Debug\TokoCat.Faktur_Page.resources
 C:\workspace\git\Final-Project_OOP\TokoCat\TokoCat\obj\Debug\TokoCat.ResupplyForm.resources
 C:\workspace\git\Final-Project_OOP\TokoCat\TokoCat\obj\Debug\TokoCat.LoginPetugas.resources
+C:\workspace\git\Final-Project_OOP\TokoCat\TokoCat\obj\Debug\TokoCat.FrmDgvResupply.resources
+C:\workspace\git\Final-Project_OOP\TokoCat\TokoCat\bin\Debug\DBPenjualanCAT.mdf
+C:\workspace\git\Final-Project_OOP\TokoCat\TokoCat\bin\Debug\DBPenjualanCAT_log.ldf
