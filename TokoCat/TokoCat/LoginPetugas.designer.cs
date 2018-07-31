@@ -1,4 +1,4 @@
-﻿namespace FinalProjectPhase1
+﻿namespace TokoCat
 {
     partial class LoginPetugas
     {
