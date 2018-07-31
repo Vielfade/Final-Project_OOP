@@ -45,7 +45,6 @@ namespace LibraryPenjualan
                                 {
                                     Kode = reader["Kode"].ToString(),
                                     Nama = reader["Nama"].ToString(),
-                                    Keterangan = reader ["Keterangan"].ToString(),
                                     Harga = reader ["Harga"].ToString(),
                                     Satuan = reader["Satuan"].ToString(),
                                     Stok = reader["Stok"].ToString()
@@ -83,7 +82,6 @@ namespace LibraryPenjualan
                                 {
                                     Kode = reader["Kode"].ToString(),
                                     Nama = reader["Nama"].ToString(),
-                                    Keterangan = reader["Keterangan"].ToString(),
                                     Harga = reader["Harga"].ToString(),
                                     Satuan = reader["Satuan"].ToString(),
                                     Stok = reader["Stok"].ToString()
@@ -124,7 +122,6 @@ namespace LibraryPenjualan
                         cmd.Parameters.Clear();
                         cmd.Parameters.AddWithValue("@kode", $"%{barang.Kode}%");
                         cmd.Parameters.AddWithValue("@nama", $"%{barang.Nama}%");
-                        cmd.Parameters.AddWithValue("@keterangan", $"%{barang.Keterangan}%");
                         cmd.Parameters.AddWithValue("@Harga", $"%{barang.Harga}%");
                         cmd.Parameters.AddWithValue("@Satuan", $"%{barang.Satuan}%");
                         cmd.Parameters.AddWithValue("@Stok", $"%{barang.Stok}%");
@@ -141,7 +138,6 @@ namespace LibraryPenjualan
                                     {
                                         Kode = reader["kode"].ToString(),
                                         Nama = reader["nama"].ToString(),
-                                        Keterangan = reader["keterangan"].ToString(),
                                         Harga = reader["harga"].ToString(),
                                         Satuan = reader["satuan"].ToString(),
                                         Stok = reader["stok"].ToString()
@@ -157,6 +153,102 @@ namespace LibraryPenjualan
                 throw ex;
             }
             return listData;
+        }
+
+        public int Update(Barang barang)
+        {
+            int result = 0;
+            SqlTransaction trans = null;
+            try
+            {
+                trans = _conn.BeginTransaction();
+                using (SqlCommand cmd = new SqlCommand())
+                {
+                    cmd.Connection = _conn;
+                    cmd.Transaction = trans;
+                    cmd.CommandText = @"update barang set kode = @kode, nama = @nama, keterangan = @keterangan,
+                        harga = @harga, satuan = @satuan,
+                        stok = @stok where kode = @kode";
+                    cmd.Parameters.Clear();
+                    cmd.Parameters.AddWithValue("@kode", barang.Kode);
+                    cmd.Parameters.AddWithValue("@nama", barang.Nama);
+                    cmd.Parameters.AddWithValue("@harga", barang.Harga);
+                    cmd.Parameters.AddWithValue("@Satuan", barang.Satuan);
+                    cmd.Parameters.AddWithValue("@stok", barang.Stok);
+                    result = cmd.ExecuteNonQuery();
+                }
+                trans.Commit();
+            }
+            catch (Exception ex)
+            {
+                if (trans != null) trans.Rollback();
+                throw ex;
+            }
+            finally
+            {
+                if (trans != null) trans.Dispose();
+            }
+            return result;
+        }
+
+        public int Delete(string kode)
+        {
+            int result = 0;
+            SqlTransaction trans = null;
+            try
+            {
+                trans = _conn.BeginTransaction();
+                using (SqlCommand cmd = new SqlCommand())
+                {
+                    cmd.Connection = _conn;
+                    cmd.Transaction = trans;
+                    cmd.CommandText = @"delete barang where kode = @kode";
+                    cmd.Parameters.Clear();
+                    cmd.Parameters.AddWithValue("@kode", kode);
+                    result = cmd.ExecuteNonQuery();
+                }
+                trans.Commit();
+            }
+            catch (Exception ex)
+            {
+                if (trans != null) trans.Rollback();
+                throw ex;
+            }
+            finally
+            {
+                if (trans != null) trans.Dispose();
+            }
+            return result;
+        }
+
+        public int Kali(string kode)
+        {
+            int result = 0;
+            SqlTransaction trans = null;
+            try
+            {
+                trans = _conn.BeginTransaction();
+                using (SqlCommand cmd = new SqlCommand())
+                {
+                    cmd.Connection = _conn;
+                    cmd.Transaction = trans;
+                    cmd.CommandText = @"select *,(), barang where kode = @kode";
+                    cmd.Parameters.Clear();
+                    cmd.Parameters.AddWithValue("@kode", kode);
+                    result = cmd.ExecuteNonQuery();
+                }
+                trans.Commit();
+            }
+            catch (Exception ex)
+            {
+                if (trans != null) trans.Rollback();
+                throw ex;
+            }
+            finally
+            {
+                if (trans != null) trans.Dispose();
+            }
+            return result;
         }
 
         public void Dispose()

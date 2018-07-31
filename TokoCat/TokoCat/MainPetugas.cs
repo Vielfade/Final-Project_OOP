@@ -54,10 +54,9 @@ namespace TokoCat
                     this.dataGridView1.DataSource = listData;
                     this.dataGridView1.Columns[0].DataPropertyName = nameof(Barang.Kode);
                     this.dataGridView1.Columns[1].DataPropertyName = nameof(Barang.Nama);
-                    this.dataGridView1.Columns[2].DataPropertyName = nameof(Barang.Keterangan);
-                    this.dataGridView1.Columns[3].DataPropertyName = nameof(Barang.Harga);
-                    this.dataGridView1.Columns[4].DataPropertyName = nameof(Barang.Satuan);
-                    this.dataGridView1.Columns[5].DataPropertyName = nameof(Barang.Stok);
+                    this.dataGridView1.Columns[2].DataPropertyName = nameof(Barang.Harga);
+                    this.dataGridView1.Columns[3].DataPropertyName = nameof(Barang.Satuan);
+                    this.dataGridView1.Columns[4].DataPropertyName = nameof(Barang.Stok);
                 }
             }
             catch (Exception ex)
