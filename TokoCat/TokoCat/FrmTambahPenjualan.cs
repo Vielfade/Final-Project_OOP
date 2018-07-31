@@ -147,5 +147,10 @@ namespace TokoCat
         {
             txtKuantitas.Text = (Convert.ToInt16(txtKuantitas.Text) + 1).ToString();
         }
+
+        private void cbKeterangan_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

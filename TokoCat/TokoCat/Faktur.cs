@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace FinalProjectPhase1
+namespace TokoCat
 {
     public partial class Faktur_Page : Form
     {
