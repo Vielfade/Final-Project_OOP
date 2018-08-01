@@ -77,6 +77,12 @@
     <Compile Include="FrmDgvResupply.Designer.cs">
       <DependentUpon>FrmDgvResupply.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmEditDataBarang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmEditDataBarang.Designer.cs">
+      <DependentUpon>FrmEditDataBarang.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmTambahPenjualan.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -109,11 +115,15 @@
     <Compile Include="ResupplyForm.designer.cs">
       <DependentUpon>ResupplyForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Setting.cs" />
     <EmbeddedResource Include="Faktur.resx">
       <DependentUpon>Faktur.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmDgvResupply.resx">
       <DependentUpon>FrmDgvResupply.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmEditDataBarang.resx">
+      <DependentUpon>FrmEditDataBarang.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmTambahPenjualan.resx">
       <DependentUpon>FrmTambahPenjualan.cs</DependentUpon>
