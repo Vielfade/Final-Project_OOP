@@ -16,7 +16,7 @@ namespace TokoCat
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new ResupplyForm());
+            Application.Run(new MainMenu());
         }
     }
 }
