@@ -69,7 +69,6 @@
             this.btnTambah.TabIndex = 19;
             this.btnTambah.Text = "+";
             this.btnTambah.UseVisualStyleBackColor = true;
-            this.btnTambah.Click += new System.EventHandler(this.btnTambah_Click);
             // 
             // btnKurang
             // 
@@ -79,7 +78,6 @@
             this.btnKurang.TabIndex = 18;
             this.btnKurang.Text = "-";
             this.btnKurang.UseVisualStyleBackColor = true;
-            this.btnKurang.Click += new System.EventHandler(this.btnKurang_Click);
             // 
             // label4
             // 
@@ -88,7 +86,7 @@
             this.label4.ForeColor = System.Drawing.SystemColors.ControlText;
             this.label4.Location = new System.Drawing.Point(398, 104);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(107, 18);
+            this.label4.Size = new System.Drawing.Size(136, 24);
             this.label4.TabIndex = 17;
             this.label4.Text = "Jumlah Barang";
             // 
@@ -96,7 +94,7 @@
             // 
             this.txtKuantitas.Location = new System.Drawing.Point(435, 132);
             this.txtKuantitas.Name = "txtKuantitas";
-            this.txtKuantitas.Size = new System.Drawing.Size(45, 20);
+            this.txtKuantitas.Size = new System.Drawing.Size(45, 22);
             this.txtKuantitas.TabIndex = 16;
             // 
             // label3
@@ -106,7 +104,7 @@
             this.label3.ForeColor = System.Drawing.SystemColors.ControlText;
             this.label3.Location = new System.Drawing.Point(246, 104);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(39, 18);
+            this.label3.Size = new System.Drawing.Size(50, 24);
             this.label3.TabIndex = 15;
             this.label3.Text = "Pilih ";
             // 
@@ -115,7 +113,7 @@
             this.cbKeterangan.FormattingEnabled = true;
             this.cbKeterangan.Location = new System.Drawing.Point(250, 131);
             this.cbKeterangan.Name = "cbKeterangan";
-            this.cbKeterangan.Size = new System.Drawing.Size(121, 21);
+            this.cbKeterangan.Size = new System.Drawing.Size(121, 24);
             this.cbKeterangan.TabIndex = 14;
             this.cbKeterangan.SelectedIndexChanged += new System.EventHandler(this.cbKeterangan_SelectedIndexChanged);
             // 
@@ -126,7 +124,7 @@
             this.label2.ForeColor = System.Drawing.SystemColors.ControlText;
             this.label2.Location = new System.Drawing.Point(69, 104);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(84, 18);
+            this.label2.Size = new System.Drawing.Size(109, 24);
             this.label2.TabIndex = 13;
             this.label2.Text = "Pilih barang";
             // 
@@ -135,9 +133,8 @@
             this.cbBarang.FormattingEnabled = true;
             this.cbBarang.Location = new System.Drawing.Point(73, 131);
             this.cbBarang.Name = "cbBarang";
-            this.cbBarang.Size = new System.Drawing.Size(121, 21);
+            this.cbBarang.Size = new System.Drawing.Size(121, 24);
             this.cbBarang.TabIndex = 12;
-            this.cbBarang.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // label1
             // 
@@ -145,7 +142,7 @@
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(244, 34);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(138, 29);
+            this.label1.Size = new System.Drawing.Size(169, 36);
             this.label1.TabIndex = 11;
             this.label1.Text = "Beli Barang";
             // 
