@@ -12,18 +12,60 @@ namespace LibraryPenjualan
 
         SqlConnection _conn = null;
 
-        public PenjualanDAO(string connectionString)
+        public List<Penjualan> listData { get; set; } = null;
+
+        //public PenjualanDAO(string connectionString)
+        //{
+        //    try
+        //    {
+        //        _conn = new SqlConnection(connectionString);
+        //        _conn.Open();
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        throw ex;
+        //    }
+        //}
+
+        
+
+        public bool InsertItem(Penjualan penjualan)
         {
+            bool result = false;
             try
             {
-                _conn = new SqlConnection(connectionString);
-                _conn.Open();
+                listData.Add(penjualan);
+                result = true;
             }
             catch (Exception ex)
             {
                 throw ex;
             }
+            return result;
         }
+
+        //public int DeleteItem(Penjualan penjualan)
+        //{
+        //    int result = 0;
+        //    try
+        //    {
+        //        string sqlString = @"delete barang where penjualan = @kode";
+        //        using (SqlCommand cmd = new SqlCommand())
+        //        {
+        //            cmd.Connection = _conn;
+        //            cmd.CommandText = sqlString;
+        //            cmd.Parameters.Clear();
+        //            cmd.Parameters.AddWithValue("@kode", penjualan);
+        //            result = cmd.ExecuteNonQuery();
+        //        }
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        throw ex;
+        //    }
+
+        //    return result;
+        //}
 
         public string GetNomorTransaksiBerikutnya(DateTime tanggal)
         {
