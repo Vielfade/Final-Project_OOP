@@ -43,7 +43,6 @@ namespace TokoCat
             {
                 MessageBox.Show(ex.Message, this.Text, MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
-            kolom.Add("");
             kolom.Add("Kode");
             kolom.Add("Nama");
             kolom.Add("Harga");
@@ -66,6 +65,7 @@ namespace TokoCat
                     this.dataGridView1.Columns[2].DataPropertyName = nameof(Barang.Harga);
                     this.dataGridView1.Columns[3].DataPropertyName = nameof(Barang.Satuan);
                     this.dataGridView1.Columns[4].DataPropertyName = nameof(Barang.Stok);
+                    
                 }
             }
             catch (Exception ex)

@@ -121,6 +121,9 @@
     <EmbeddedResource Include="FrmDgvResupply.resx">
       <DependentUpon>FrmDgvResupply.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FrmEditDataBarang.resx">
+      <DependentUpon>FrmEditDataBarang.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmTambahPenjualan.resx">
       <DependentUpon>FrmTambahPenjualan.cs</DependentUpon>
     </EmbeddedResource>

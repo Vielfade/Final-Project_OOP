@@ -10,12 +10,10 @@ namespace LibraryPenjualan
     {
         public static string GetConnectionString()
         {
-           return
-                //@"Data Source = (localdb)\mssqllocaldb; 
-                //    Initial Catalog = DBPenjualanCat; 
-                //    Integrated Security = True;";
+            return
+                 @"Data Source = (localdb)\mssqllocaldb; Initial Catalog = DBPenjualanCat; Integrated Security = True;";
 
-            @"Data Source = .\sqlexpress; Initial Catalog = DBPenjualanCat; Integrated Security = True";
+           // @"Data Source = .\sqlexpress; Initial Catalog = DBPenjualanCat; Integrated Security = True";
 
         }
     }
