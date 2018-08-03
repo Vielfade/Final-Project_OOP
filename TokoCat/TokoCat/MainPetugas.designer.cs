@@ -38,14 +38,13 @@
             this.button6 = new System.Windows.Forms.Button();
             this.lblBanyakRecordData = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.Kode = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Nama = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Keterangan = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Harga = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Satuan = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Stok = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -140,7 +139,6 @@
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Kode,
             this.Nama,
-            this.Keterangan,
             this.Harga,
             this.Satuan,
             this.Stok});
@@ -151,36 +149,6 @@
             this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridView1.Size = new System.Drawing.Size(561, 176);
             this.dataGridView1.TabIndex = 12;
-            // 
-            // Kode
-            // 
-            this.Kode.HeaderText = "Kode";
-            this.Kode.Name = "Kode";
-            // 
-            // Nama
-            // 
-            this.Nama.HeaderText = "Nama";
-            this.Nama.Name = "Nama";
-            // 
-            // Keterangan
-            // 
-            this.Keterangan.HeaderText = "Keterangan";
-            this.Keterangan.Name = "Keterangan";
-            // 
-            // Harga
-            // 
-            this.Harga.HeaderText = "Harga";
-            this.Harga.Name = "Harga";
-            // 
-            // Satuan
-            // 
-            this.Satuan.HeaderText = "Satuan";
-            this.Satuan.Name = "Satuan";
-            // 
-            // Stok
-            // 
-            this.Stok.HeaderText = "Stok";
-            this.Stok.Name = "Stok";
             // 
             // textBox1
             // 
@@ -199,6 +167,31 @@
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(92, 21);
             this.comboBox1.TabIndex = 14;
+            // 
+            // Kode
+            // 
+            this.Kode.HeaderText = "Kode";
+            this.Kode.Name = "Kode";
+            // 
+            // Nama
+            // 
+            this.Nama.HeaderText = "Nama";
+            this.Nama.Name = "Nama";
+            // 
+            // Harga
+            // 
+            this.Harga.HeaderText = "Harga";
+            this.Harga.Name = "Harga";
+            // 
+            // Satuan
+            // 
+            this.Satuan.HeaderText = "Satuan";
+            this.Satuan.Name = "Satuan";
+            // 
+            // Stok
+            // 
+            this.Stok.HeaderText = "Stok";
+            this.Stok.Name = "Stok";
             // 
             // MainPetugas
             // 
@@ -239,14 +232,13 @@
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Label lblBanyakRecordData;
         private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Kode;
         private System.Windows.Forms.DataGridViewTextBoxColumn Nama;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Keterangan;
         private System.Windows.Forms.DataGridViewTextBoxColumn Harga;
         private System.Windows.Forms.DataGridViewTextBoxColumn Satuan;
         private System.Windows.Forms.DataGridViewTextBoxColumn Stok;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.ComboBox comboBox1;
     }
 }
 

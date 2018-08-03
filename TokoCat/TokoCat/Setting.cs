@@ -8,10 +8,12 @@ namespace TokoCat
 {
     public class Setting
     {
-        public static string connString = 
-                    @"Data Source = .\sqlexpress; 
-                        Initial Catalog = DBPenjualanCat; 
-                        Integrated Security = True";
+        public static string connString = @"Data Source = (localdb)\mssqllocaldb; 
+                    Initial Catalog = DBPenjualanCat; 
+                    Integrated Security = True;";
+        //            @"Data Source = .\sqlexpress; 
+        //                Initial Catalog = DBPenjualanCat; 
+        //                Integrated Security = True";
 
     }
 }
