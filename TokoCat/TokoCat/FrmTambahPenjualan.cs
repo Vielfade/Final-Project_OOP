@@ -95,7 +95,7 @@ namespace TokoCat
             //txtHarga.Text = (temp * Convert.ToInt32(txtKuantitas.Text)).ToString();
 
             // TODO: This line of code loads data into the 'dBPenjualanCATDataSet.Barang' table. You can move, or remove it, as needed.
-           // this.barangTableAdapter.Fill(this.dBPenjualanCATDataSet.Barang);
+            //this.barangTableAdapter.Fill(this.dBPenjualanCATDataSet.Barang);
             
 
             cbKeterangan.Enabled = false;
