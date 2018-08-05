@@ -45,6 +45,7 @@
             this.Stok = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.btnRefresh = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -77,7 +78,7 @@
             this.button1.Margin = new System.Windows.Forms.Padding(4);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(143, 70);
-            this.button1.TabIndex = 5;
+            this.button1.TabIndex = 3;
             this.button1.Text = "Logout";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
@@ -89,7 +90,7 @@
             this.button2.Margin = new System.Windows.Forms.Padding(4);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(143, 70);
-            this.button2.TabIndex = 6;
+            this.button2.TabIndex = 5;
             this.button2.Text = "Faktur";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
@@ -101,7 +102,7 @@
             this.button4.Margin = new System.Windows.Forms.Padding(4);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(143, 70);
-            this.button4.TabIndex = 8;
+            this.button4.TabIndex = 7;
             this.button4.Text = "Edit";
             this.button4.UseVisualStyleBackColor = true;
             this.button4.Click += new System.EventHandler(this.button4_Click);
@@ -113,7 +114,7 @@
             this.Button5.Margin = new System.Windows.Forms.Padding(4);
             this.Button5.Name = "Button5";
             this.Button5.Size = new System.Drawing.Size(143, 70);
-            this.Button5.TabIndex = 9;
+            this.Button5.TabIndex = 6;
             this.Button5.Text = "Hapus";
             this.Button5.UseVisualStyleBackColor = true;
             this.Button5.Click += new System.EventHandler(this.button5_Click);
@@ -125,7 +126,7 @@
             this.button6.Margin = new System.Windows.Forms.Padding(4);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(143, 70);
-            this.button6.TabIndex = 10;
+            this.button6.TabIndex = 4;
             this.button6.Text = "Resupply";
             this.button6.UseVisualStyleBackColor = true;
             this.button6.Click += new System.EventHandler(this.button6_Click);
@@ -141,6 +142,8 @@
             // 
             // dataGridView1
             // 
+            this.dataGridView1.AllowUserToAddRows = false;
+            this.dataGridView1.AllowUserToDeleteRows = false;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Kode,
@@ -150,43 +153,49 @@
             this.Stok});
             this.dataGridView1.Location = new System.Drawing.Point(16, 180);
             this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowTemplate.Height = 24;
             this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridView1.Size = new System.Drawing.Size(748, 217);
-            this.dataGridView1.TabIndex = 12;
+            this.dataGridView1.TabIndex = 8;
             // 
             // Kode
             // 
             this.Kode.HeaderText = "Kode";
             this.Kode.Name = "Kode";
+            this.Kode.ReadOnly = true;
             // 
             // Nama
             // 
             this.Nama.HeaderText = "Nama";
             this.Nama.Name = "Nama";
+            this.Nama.ReadOnly = true;
             // 
             // Harga
             // 
             this.Harga.HeaderText = "Harga";
             this.Harga.Name = "Harga";
+            this.Harga.ReadOnly = true;
             // 
             // Satuan
             // 
             this.Satuan.HeaderText = "Satuan";
             this.Satuan.Name = "Satuan";
+            this.Satuan.ReadOnly = true;
             // 
             // Stok
             // 
             this.Stok.HeaderText = "Stok";
             this.Stok.Name = "Stok";
+            this.Stok.ReadOnly = true;
             // 
             // textBox1
             // 
             this.textBox1.Location = new System.Drawing.Point(321, 102);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(201, 22);
-            this.textBox1.TabIndex = 13;
-            this.textBox1.Leave += new System.EventHandler(this.textBox1_Leave);
+            this.textBox1.TabIndex = 1;
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // comboBox1
             // 
@@ -195,7 +204,19 @@
             this.comboBox1.Location = new System.Drawing.Point(143, 102);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(121, 24);
-            this.comboBox1.TabIndex = 14;
+            this.comboBox1.TabIndex = 7;
+            // 
+            // btnRefresh
+            // 
+            this.btnRefresh.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRefresh.Location = new System.Drawing.Point(732, 13);
+            this.btnRefresh.Margin = new System.Windows.Forms.Padding(4);
+            this.btnRefresh.Name = "btnRefresh";
+            this.btnRefresh.Size = new System.Drawing.Size(143, 70);
+            this.btnRefresh.TabIndex = 2;
+            this.btnRefresh.Text = "Refresh";
+            this.btnRefresh.UseVisualStyleBackColor = true;
+            this.btnRefresh.Click += new System.EventHandler(this.btnRefresh_Click);
             // 
             // MainPetugas
             // 
@@ -204,6 +225,7 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1067, 470);
+            this.Controls.Add(this.btnRefresh);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.dataGridView1);
@@ -245,6 +267,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Harga;
         private System.Windows.Forms.DataGridViewTextBoxColumn Satuan;
         private System.Windows.Forms.DataGridViewTextBoxColumn Stok;
+        private System.Windows.Forms.Button btnRefresh;
     }
 }
 

@@ -43,6 +43,7 @@ namespace TokoCat
             {
                 MessageBox.Show(ex.Message, this.Text, MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
+
             kolom.Add("Kode");
             kolom.Add("Nama");
             kolom.Add("Harga");
@@ -76,53 +77,6 @@ namespace TokoCat
             {
                 this.lblBanyakRecordData.Text = $"{(listData != null ? listData.Count.ToString("n0") : "0")} Record";
             }
-        }
-
-        
-
-        private void button3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox1_Leave(object sender, EventArgs e)
-        {
-            List<Barang> listbaru = new List<Barang>();
-            try
-            {
-                dataGridView1.DataSource = null;
-                
-                foreach (var item in listData)
-                {
-                    if (comboBox1.Text == "Kode" && item.Kode.ToString().ToLower().Contains(textBox1.Text))
-                    {
-                        listbaru.Add(item);
-                    }
-                    if (comboBox1.Text == "Nama" && item.Nama.ToString().ToLower().Contains(textBox1.Text))
-                    {
-                        listbaru.Add(item);
-                    }
-                    if (comboBox1.Text == "Harga" && item.Harga.ToString().ToLower().Contains(textBox1.Text))
-                    {
-                        listbaru.Add(item);
-                    }
-                    if (comboBox1.Text == "Satuan" && item.Satuan.ToString().ToLower().Contains(textBox1.Text))
-                    {
-                        listbaru.Add(item);
-                    }
-                    if (comboBox1.Text == "Stok" && item.Stok.ToString().ToLower().Contains(textBox1.Text))
-                    {
-                        listbaru.Add(item);
-                    }
-                }
-            }
-            catch (Exception ex)
-            {
-
-                MessageBox.Show(ex.Message, this.Text, MessageBoxButtons.OK, MessageBoxIcon.Information);
-                
-            }
-            dataGridView1.DataSource = listbaru;
         }
 
         private void button4_Click(object sender, EventArgs e)
@@ -173,6 +127,56 @@ namespace TokoCat
         {
             LoginPetugas frm = new LoginPetugas();
             frm.ShowDialog();
+        }
+
+        private void btnRefresh_Click(object sender, EventArgs e)
+        {
+            MainPetugas_Load(null,null);
+            textBox1.Text = "";
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+            List<Barang> listbaru = new List<Barang>();
+            try
+            {
+                dataGridView1.DataSource = null;
+
+                foreach (var item in listData)
+                {
+                    if (comboBox1.Text == "" && item.ToString().ToLower().Contains(textBox1.Text))
+                    {
+                        listbaru.Add(item);
+                    }
+                    if (comboBox1.Text == "Kode" && item.Kode.ToString().ToLower().Contains(textBox1.Text))
+                    {
+                        listbaru.Add(item);
+                    }
+                    if (comboBox1.Text == "Nama" && item.Nama.ToString().ToLower().Contains(textBox1.Text))
+                    {
+                        listbaru.Add(item);
+                    }
+                    if (comboBox1.Text == "Harga" && item.Harga.ToString().ToLower().Contains(textBox1.Text))
+                    {
+                        listbaru.Add(item);
+                    }
+                    if (comboBox1.Text == "Satuan" && item.Satuan.ToString().ToLower().Contains(textBox1.Text))
+                    {
+                        listbaru.Add(item);
+                    }
+                    if (comboBox1.Text == "Stok" && item.Stok.ToString().ToLower().Contains(textBox1.Text))
+                    {
+                        listbaru.Add(item);
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show(ex.Message, this.Text, MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+            }
+            dataGridView1.DataSource = listbaru;
         }
     }
 }
