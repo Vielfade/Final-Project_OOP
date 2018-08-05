@@ -14,11 +14,14 @@ namespace TokoCat
     public partial class MainMenu : Form
     {
         List<Barang> listData =  null;
+        PenjualanDAO jualDao = null;
 
         public MainMenu()
         {
             InitializeComponent();
-            this.dgvMainMenu.AutoGenerateColumns = false;
+            this.lblBnykRecord.Text = $"{this.dgvMainMenu.Rows.Count.ToString("n0")} Record.";
+            HitungTotal();
+            this.MainMenu_Resize(null, null);
         }
 
         private void btn_sign_Click(object sender, EventArgs e)
@@ -30,43 +33,27 @@ namespace TokoCat
 
         public void MainMenu_Load(object sender, EventArgs e)
         {
-            //try
-            //{
-            //    using (var barangDao = new BarangDAO())
-            //    {
-            //        this.dgvMainMenu.DataSource = barangDao.GetAllDataBarang();
-            //        //this.dgvMainMenu.Columns[0].DataPropertyName = "nomor";
-            //        this.dgvMainMenu.Columns[0].DataPropertyName = "nama";
-            //        //this.dgvMainMenu.Columns[2].DataPropertyName = "keterangan";
-            //        this.dgvMainMenu.Columns[1].DataPropertyName = "jumlah";
-            //        this.dgvMainMenu.Columns[2].DataPropertyName = "harga";
-            //    }
-            //}
-            //catch (Exception ex)
-            //{
-            //    MessageBox.Show(ex.Message, this.Text, MessageBoxButtons.OK, MessageBoxIcon.Information);
-            //}
+            try
+            {
+                //txtKuantitas.Text = "1";
+                listData = new BarangDAO().GetAllDataBarang();
+                listData.Insert(0, new Barang { Nama = "" });
+                this.cbBarang.DataSource = listData;
+                this.cbBarang.DisplayMember = nameof(Barang.Nama);
+                //QueryData();
 
-            //listData = new BarangDAO().GetAllDataBarang();
-            //listData.Insert(0, new Barang{ Nama = ""});
-
-            //cbBarang.DataSource = listData;
-            //cbBarang.DisplayMember = nameof(Barang.Nama);
-            //cbBarang.ValueMember = "@nama";
-            //cbBarang.SelectedValue = listData;
-
-            txtKuantitas.Text = "1";
-            listData = new BarangDAO().GetAllDataBarang();
-            listData.Insert(0, new Barang { Nama = ""});
-            this.cbBarang.DataSource = listData;
-            this.cbBarang.DisplayMember = nameof(Barang.Nama);
-            //QueryData();
+                jualDao = new PenjualanDAO(Setting.connString);
+                this.txtNoFaktur.Text = jualDao.GetNomorTransaksiBerikutnya(this.dtpFaktur.Value.Date);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, this.Text, MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
         }        
 
         private void btn_add_Click(object sender, EventArgs e)
         {
-            //FrmTambahPenjualan frmTambah = new FrmTambahPenjualan();
-            //frmTambah.Show();
+            
 
             //this.dgvMainMenu.DataSource = null;
             //this.dgvMainMenu.DataSource = frmTambah.listData;
@@ -125,14 +112,12 @@ namespace TokoCat
 
         private void btnTambah_Click(object sender, EventArgs e)
         {
-            if (cbBarang.SelectedItem.Equals(""))
-            {
-                btnTambah.Enabled = true;
-            }
-            else
-            {
-                txtKuantitas.Text = (Convert.ToInt32(txtKuantitas.Text) + 1).ToString();
-            }            
+            int qty = Convert.ToInt32(this.txtKuantitas.Text);
+            qty += 1;
+            this.txtKuantitas.Text = qty.ToString();
+            decimal harga = Convert.ToDecimal(this.txtHarga.Text);
+            decimal subtotal = qty * harga;
+            this.txtSubTotal.Text = subtotal.ToString("n0");
         }
 
         private void btnKurang_Click(object sender, EventArgs e)
@@ -147,13 +132,78 @@ namespace TokoCat
             }
             else
             {
-                txtKuantitas.Text = (Convert.ToInt32(txtKuantitas.Text) - 1).ToString();
+                int qty = Convert.ToInt32(this.txtKuantitas.Text);
+                qty -= 1;
+                this.txtKuantitas.Text = qty.ToString();
+                decimal harga = Convert.ToDecimal(this.txtHarga.Text);
+                decimal subtotal = qty * harga;
+                this.txtSubTotal.Text = subtotal.ToString("n0");
             }            
         }
 
         private void btnBatal_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void txtKuantitas_TextChanged(object sender, EventArgs e)
+        {
+            if (System.Text.RegularExpressions.Regex.IsMatch(txtKuantitas.Text, "  ^ [0-9]"))
+            {
+                txtKuantitas.Text = "";
+            }
+        }
+
+        private void txtKuantitas_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) && (e.KeyChar != '.'))
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void cbBarang_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (this.cbBarang.Text.Trim() != "" && listData?.Count > 0)
+            {
+                string nama = this.cbBarang.Text.Trim();
+                foreach (var item in listData)
+                {
+                    if (item.Nama == nama)
+                    {
+                        this.txtHarga.Text = Convert.ToDecimal(item.Harga).ToString("n0");
+                        this.txtSubTotal.Text = Convert.ToDecimal(item.Harga).ToString("n0");
+                    }
+                }
+            }
+            txtKuantitas.Text = "1";
+        }
+
+        private void HitungTotal()
+        {
+            decimal total = 0;
+            foreach (DataGridViewRow row in this.dgvMainMenu.Rows)
+            {
+                if (row.Cells[5].Value != null && decimal.TryParse(row.Cells[5].Value.ToString(), out decimal value))
+                {
+                    total += value;
+                }
+            }
+            this.lblTotal.Text = total.ToString("n0");
+        }
+
+        private void MainMenu_Resize(object sender, EventArgs e)
+        {
+            this.dgvMainMenu.Columns[0].Width = 35 * this.dgvMainMenu.Width / 100;
+            this.dgvMainMenu.Columns[1].Width = 10 * this.dgvMainMenu.Width / 100;
+            this.dgvMainMenu.Columns[2].Width = 13 * this.dgvMainMenu.Width / 100;
+            this.dgvMainMenu.Columns[3].Width = 13 * this.dgvMainMenu.Width / 100;
+        }
+
+        private void dtpFaktur_Leave(object sender, EventArgs e)
+        {
+            this.txtNoFaktur.Text = jualDao.GetNomorTransaksiBerikutnya(this.dtpFaktur.Value.Date);
+
         }
     }
 }

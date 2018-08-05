@@ -98,6 +98,7 @@
             this.Controls.Add(this.btn_batal);
             this.Controls.Add(this.btn_confirm);
             this.Controls.Add(this.dgvData);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "FrmDgvResupply";
             this.Text = "FrmDgvResupply";
             this.Load += new System.EventHandler(this.FrmDgvResupply_Load);

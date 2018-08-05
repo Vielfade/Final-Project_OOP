@@ -47,8 +47,8 @@
             this.Jumlah = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Harga = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btn_hapus = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btn_ok = new System.Windows.Forms.Button();
+            this.btn_cancel = new System.Windows.Forms.Button();
             this.txtbox_nama = new System.Windows.Forms.TextBox();
             this.txtSubTotal = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
@@ -126,7 +126,7 @@
             // btn_pesan
             // 
             this.btn_pesan.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_pesan.Location = new System.Drawing.Point(1045, 77);
+            this.btn_pesan.Location = new System.Drawing.Point(1014, 77);
             this.btn_pesan.Name = "btn_pesan";
             this.btn_pesan.Size = new System.Drawing.Size(115, 37);
             this.btn_pesan.TabIndex = 9;
@@ -171,7 +171,7 @@
             // btn_list
             // 
             this.btn_list.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_list.Location = new System.Drawing.Point(1045, 181);
+            this.btn_list.Location = new System.Drawing.Point(1014, 181);
             this.btn_list.Name = "btn_list";
             this.btn_list.Size = new System.Drawing.Size(115, 57);
             this.btn_list.TabIndex = 14;
@@ -190,24 +190,28 @@
             this.Harga});
             this.dataGridView1.Location = new System.Drawing.Point(427, 77);
             this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.ReadOnly = true;
             this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView1.Size = new System.Drawing.Size(603, 275);
+            this.dataGridView1.Size = new System.Drawing.Size(570, 275);
             this.dataGridView1.TabIndex = 15;
             // 
             // Kode
             // 
             this.Kode.HeaderText = "Kode";
             this.Kode.Name = "Kode";
+            this.Kode.ReadOnly = true;
             // 
             // Nama
             // 
             this.Nama.HeaderText = "Nama";
             this.Nama.Name = "Nama";
+            this.Nama.ReadOnly = true;
             // 
             // Jumlah
             // 
             this.Jumlah.HeaderText = "Jumlah";
             this.Jumlah.Name = "Jumlah";
+            this.Jumlah.ReadOnly = true;
             // 
             // Harga
             // 
@@ -219,7 +223,7 @@
             // 
             this.btn_hapus.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_hapus.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btn_hapus.Location = new System.Drawing.Point(1045, 129);
+            this.btn_hapus.Location = new System.Drawing.Point(1014, 129);
             this.btn_hapus.Name = "btn_hapus";
             this.btn_hapus.Size = new System.Drawing.Size(115, 37);
             this.btn_hapus.TabIndex = 16;
@@ -227,26 +231,27 @@
             this.btn_hapus.UseVisualStyleBackColor = true;
             this.btn_hapus.Click += new System.EventHandler(this.btn_hapus_Click);
             // 
-            // button1
+            // btn_ok
             // 
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(1045, 315);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(115, 37);
-            this.button1.TabIndex = 17;
-            this.button1.Text = "OK";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btn_ok.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_ok.Location = new System.Drawing.Point(1014, 315);
+            this.btn_ok.Name = "btn_ok";
+            this.btn_ok.Size = new System.Drawing.Size(115, 37);
+            this.btn_ok.TabIndex = 17;
+            this.btn_ok.Text = "OK";
+            this.btn_ok.UseVisualStyleBackColor = true;
+            this.btn_ok.Click += new System.EventHandler(this.btn_ok_Click);
             // 
-            // button2
+            // btn_cancel
             // 
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(1045, 260);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(115, 37);
-            this.button2.TabIndex = 18;
-            this.button2.Text = "Cancel";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.btn_cancel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_cancel.Location = new System.Drawing.Point(1014, 255);
+            this.btn_cancel.Name = "btn_cancel";
+            this.btn_cancel.Size = new System.Drawing.Size(115, 37);
+            this.btn_cancel.TabIndex = 18;
+            this.btn_cancel.Text = "Cancel";
+            this.btn_cancel.UseVisualStyleBackColor = true;
+            this.btn_cancel.Click += new System.EventHandler(this.btn_cancel_Click);
             // 
             // txtbox_nama
             // 
@@ -281,12 +286,12 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1181, 371);
+            this.ClientSize = new System.Drawing.Size(1143, 371);
             this.Controls.Add(this.txtSubTotal);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.txtbox_nama);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btn_cancel);
+            this.Controls.Add(this.btn_ok);
             this.Controls.Add(this.btn_hapus);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.btn_list);
@@ -331,8 +336,8 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Jumlah;
         private System.Windows.Forms.DataGridViewTextBoxColumn Harga;
         private System.Windows.Forms.Button btn_hapus;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btn_ok;
+        private System.Windows.Forms.Button btn_cancel;
         private System.Windows.Forms.TextBox txtbox_nama;
         private System.Windows.Forms.TextBox txtSubTotal;
         private System.Windows.Forms.Label label4;

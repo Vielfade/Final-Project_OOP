@@ -115,6 +115,7 @@
     <Compile Include="ResupplyForm.designer.cs">
       <DependentUpon>ResupplyForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Setting.cs" />
     <EmbeddedResource Include="Faktur.resx">
       <DependentUpon>Faktur.cs</DependentUpon>
     </EmbeddedResource>
