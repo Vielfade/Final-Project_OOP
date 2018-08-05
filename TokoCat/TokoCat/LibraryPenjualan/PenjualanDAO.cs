@@ -14,20 +14,18 @@ namespace LibraryPenjualan
 
         public List<Penjualan> listData { get; set; } = null;
 
-        //public PenjualanDAO(string connectionString)
-        //{
-        //    try
-        //    {
-        //        _conn = new SqlConnection(connectionString);
-        //        _conn.Open();
-        //    }
-        //    catch (Exception ex)
-        //    {
-        //        throw ex;
-        //    }
-        //}
-
-        
+        public PenjualanDAO(string connectionString)
+        {
+            try
+            {
+                _conn = new SqlConnection(connectionString);
+                _conn.Open();
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
 
         public bool InsertItem(Penjualan penjualan)
         {

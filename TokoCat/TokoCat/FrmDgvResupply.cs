@@ -48,9 +48,9 @@ namespace TokoCat
 
         private void FrmDgvResupply_Resize(object sender, EventArgs e)
         {
-            this.dgvData.Columns[0].Width = 10 * this.dgvData.Width / 100;
-            this.dgvData.Columns[1].Width = 20 * this.dgvData.Width / 100;
-            this.dgvData.Columns[2].Width = 20 * this.dgvData.Width / 100;
+            this.dgvData.Columns[0].Width = 20 * this.dgvData.Width / 100;
+            this.dgvData.Columns[1].Width = 40 * this.dgvData.Width / 100;
+            this.dgvData.Columns[2].Width = 32 * this.dgvData.Width / 100;
         }
 
         private void button2_Click(object sender, EventArgs e)
