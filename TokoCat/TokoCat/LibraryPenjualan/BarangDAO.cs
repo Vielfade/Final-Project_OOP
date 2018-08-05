@@ -190,6 +190,38 @@ namespace LibraryPenjualan
             return result;
         }
 
+        public int UpdateStok(Barang barang)
+        {
+            int result = 0;
+            SqlTransaction trans = null;
+            try
+            {
+                trans = _conn.BeginTransaction();
+                using (SqlCommand cmd = new SqlCommand())
+                {
+                    cmd.Connection = _conn;
+                    cmd.Transaction = trans;
+                    cmd.CommandText = @"update barang set 
+                        stok = @stok where kode = @kode";
+                    cmd.Parameters.Clear();
+                    cmd.Parameters.AddWithValue("@kode", barang.Kode);
+                    cmd.Parameters.AddWithValue("@stok", barang.Stok);
+                    result = cmd.ExecuteNonQuery();
+                }
+                trans.Commit();
+            }
+            catch (Exception ex)
+            {
+                if (trans != null) trans.Rollback();
+                throw ex;
+            }
+            finally
+            {
+                if (trans != null) trans.Dispose();
+            }
+            return result;
+        }
+
         public int Delete(string kode)
         {
             int result = 0;

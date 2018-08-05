@@ -21,11 +21,11 @@ namespace TokoCat
             form.ShowDialog();
             return _result;
         }
+
         public FrmEditDataBarang(string Kode)
         {
             InitializeComponent();
             _kode = Kode;
-            
         }
 
         private void FrmEditDataBarang_Load(object sender, EventArgs e)
