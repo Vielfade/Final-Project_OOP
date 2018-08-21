@@ -11,11 +11,11 @@ namespace LibraryPenjualan
     {
         SqlConnection _conn = null;
 
-        public SupplierDAO(string connectionString)
+        public SupplierDAO()
         {
             try
             {
-                _conn = new SqlConnection(connectionString);
+                _conn = new SqlConnection(Program.GetConnectionString());
                 _conn.Open();
             }
             catch (Exception ex)
@@ -79,7 +79,7 @@ namespace LibraryPenjualan
                                 result = new Supplier
                                 {
                                     Kode = reader["Kode"].ToString(),
-                                    Nama = reader["Qty"].ToString(),
+                                    Nama = reader["Nama"].ToString(),
                                     Jumlah = Convert.ToInt32(reader["Jumlah"]),
                                     Harga = reader["Harga"].ToString()
                                 };
@@ -94,6 +94,38 @@ namespace LibraryPenjualan
             }
             return result;
         }
+
+        public int Delete(string kode)
+        {
+            int result = 0;
+            SqlTransaction trans = null;
+            try
+            {
+                trans = _conn.BeginTransaction();
+                using (SqlCommand cmd = new SqlCommand())
+                {
+                    cmd.Connection = _conn;
+                    cmd.Transaction = trans;
+                    cmd.CommandText = @"delete supplier where kode = @kode";
+                    cmd.Parameters.Clear();
+                    cmd.Parameters.AddWithValue("@kode", kode);
+                    result = cmd.ExecuteNonQuery();
+                }
+                trans.Commit();
+            }
+            catch (Exception ex)
+            {
+                if (trans != null) trans.Rollback();
+                throw ex;
+            }
+            finally
+            {
+                if (trans != null) trans.Dispose();
+            }
+            return result;
+        }
+
+
         public void Dispose()
         {
             throw new NotImplementedException();

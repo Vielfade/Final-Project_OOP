@@ -37,8 +37,12 @@
             this.lbl_ttlharga = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.dgvMainMenu = new System.Windows.Forms.DataGridView();
+            this.Column_nama = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column_quantity = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btn_add = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
+            this.lblTotal = new System.Windows.Forms.Label();
             this.lblBnykRecord = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.cbBarang = new System.Windows.Forms.ComboBox();
@@ -57,10 +61,6 @@
             this.txtSubTotal = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.dtpFaktur = new System.Windows.Forms.DateTimePicker();
-            this.Column_nama = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column_quantity = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dgvMainMenu)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.barangBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dBPenjualanCATDataSet)).BeginInit();
@@ -91,7 +91,7 @@
             // btn_sign
             // 
             this.btn_sign.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btn_sign.Location = new System.Drawing.Point(976, 15);
+            this.btn_sign.Location = new System.Drawing.Point(1097, 15);
             this.btn_sign.Margin = new System.Windows.Forms.Padding(4);
             this.btn_sign.Name = "btn_sign";
             this.btn_sign.Size = new System.Drawing.Size(100, 28);
@@ -117,10 +117,11 @@
             this.lbl_ttlharga.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lbl_ttlharga.AutoSize = true;
-            this.lbl_ttlharga.Location = new System.Drawing.Point(841, 548);
+            this.lbl_ttlharga.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_ttlharga.Location = new System.Drawing.Point(962, 548);
             this.lbl_ttlharga.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_ttlharga.Name = "lbl_ttlharga";
-            this.lbl_ttlharga.Size = new System.Drawing.Size(115, 17);
+            this.lbl_ttlharga.Size = new System.Drawing.Size(156, 25);
             this.lbl_ttlharga.TabIndex = 12;
             this.lbl_ttlharga.Text = "Total harga : Rp ";
             // 
@@ -155,13 +156,36 @@
             this.dgvMainMenu.Location = new System.Drawing.Point(454, 124);
             this.dgvMainMenu.Margin = new System.Windows.Forms.Padding(4);
             this.dgvMainMenu.Name = "dgvMainMenu";
-            this.dgvMainMenu.Size = new System.Drawing.Size(622, 416);
+            this.dgvMainMenu.Size = new System.Drawing.Size(743, 416);
             this.dgvMainMenu.TabIndex = 10;
+            // 
+            // Column_nama
+            // 
+            this.Column_nama.HeaderText = "Nama Barang";
+            this.Column_nama.Name = "Column_nama";
+            this.Column_nama.ReadOnly = true;
+            // 
+            // Column_quantity
+            // 
+            this.Column_quantity.HeaderText = "Jumlah barang";
+            this.Column_quantity.Name = "Column_quantity";
+            // 
+            // Column1
+            // 
+            this.Column1.HeaderText = "Harga";
+            this.Column1.Name = "Column1";
+            this.Column1.ReadOnly = true;
+            // 
+            // Column2
+            // 
+            this.Column2.HeaderText = "SubTotal";
+            this.Column2.Name = "Column2";
+            this.Column2.ReadOnly = true;
             // 
             // btn_add
             // 
             this.btn_add.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btn_add.Location = new System.Drawing.Point(173, 121);
+            this.btn_add.Location = new System.Drawing.Point(294, 121);
             this.btn_add.Margin = new System.Windows.Forms.Padding(4);
             this.btn_add.Name = "btn_add";
             this.btn_add.Size = new System.Drawing.Size(100, 28);
@@ -170,23 +194,24 @@
             this.btn_add.UseVisualStyleBackColor = true;
             this.btn_add.Click += new System.EventHandler(this.btn_add_Click);
             // 
-            // label1
+            // lblTotal
             // 
-            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.lblTotal.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(1060, 548);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(16, 17);
-            this.label1.TabIndex = 18;
-            this.label1.Text = "0";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.lblTotal.AutoSize = true;
+            this.lblTotal.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTotal.Location = new System.Drawing.Point(1181, 548);
+            this.lblTotal.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblTotal.Name = "lblTotal";
+            this.lblTotal.Size = new System.Drawing.Size(23, 25);
+            this.lblTotal.TabIndex = 18;
+            this.lblTotal.Text = "0";
+            this.lblTotal.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // lblBnykRecord
             // 
             this.lblBnykRecord.AutoSize = true;
-            this.lblBnykRecord.Location = new System.Drawing.Point(951, 103);
+            this.lblBnykRecord.Location = new System.Drawing.Point(1072, 103);
             this.lblBnykRecord.Name = "lblBnykRecord";
             this.lblBnykRecord.Size = new System.Drawing.Size(125, 17);
             this.lblBnykRecord.TabIndex = 19;
@@ -214,6 +239,7 @@
             this.cbBarang.Size = new System.Drawing.Size(247, 24);
             this.cbBarang.TabIndex = 23;
             this.cbBarang.ValueMember = "Nama";
+            this.cbBarang.SelectedIndexChanged += new System.EventHandler(this.cbBarang_SelectedIndexChanged);
             // 
             // barangBindingSource
             // 
@@ -264,6 +290,8 @@
             this.txtKuantitas.TabIndex = 25;
             this.txtKuantitas.Text = "0";
             this.txtKuantitas.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtKuantitas.TextChanged += new System.EventHandler(this.txtKuantitas_TextChanged);
+            this.txtKuantitas.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtKuantitas_KeyPress);
             // 
             // txtHarga
             // 
@@ -347,29 +375,7 @@
             this.dtpFaktur.Name = "dtpFaktur";
             this.dtpFaktur.Size = new System.Drawing.Size(200, 22);
             this.dtpFaktur.TabIndex = 37;
-            // 
-            // Column_nama
-            // 
-            this.Column_nama.HeaderText = "Nama Barang";
-            this.Column_nama.Name = "Column_nama";
-            this.Column_nama.ReadOnly = true;
-            // 
-            // Column_quantity
-            // 
-            this.Column_quantity.HeaderText = "Jumlah barang";
-            this.Column_quantity.Name = "Column_quantity";
-            // 
-            // Column1
-            // 
-            this.Column1.HeaderText = "Harga";
-            this.Column1.Name = "Column1";
-            this.Column1.ReadOnly = true;
-            // 
-            // Column2
-            // 
-            this.Column2.HeaderText = "SubTotal";
-            this.Column2.Name = "Column2";
-            this.Column2.ReadOnly = true;
+            this.dtpFaktur.Leave += new System.EventHandler(this.dtpFaktur_Leave);
             // 
             // MainMenu
             // 
@@ -377,7 +383,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1093, 583);
+            this.ClientSize = new System.Drawing.Size(1214, 583);
             this.Controls.Add(this.dtpFaktur);
             this.Controls.Add(this.txtSubTotal);
             this.Controls.Add(this.label7);
@@ -394,7 +400,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.cbBarang);
             this.Controls.Add(this.lblBnykRecord);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.lblTotal);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.lbl_main);
             this.Controls.Add(this.btn_sign);
@@ -408,6 +414,7 @@
             this.Name = "MainMenu";
             this.Text = "Main Menu";
             this.Load += new System.EventHandler(this.MainMenu_Load);
+            this.Resize += new System.EventHandler(this.MainMenu_Resize);
             ((System.ComponentModel.ISupportInitialize)(this.dgvMainMenu)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.barangBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dBPenjualanCATDataSet)).EndInit();
@@ -425,7 +432,7 @@
         private System.Windows.Forms.Label lbl_ttlharga;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Button btn_add;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lblTotal;
         public System.Windows.Forms.DataGridView dgvMainMenu;
         private System.Windows.Forms.Label lblBnykRecord;
         private System.Windows.Forms.BindingSource barangBindingSource;
